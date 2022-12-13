@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.titulo {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
