@@ -14,12 +14,13 @@ export class TabelaComponent implements OnInit {
   todos: Todo[]=[];
 
   ngOnInit(): void {
-
+    this.getTodos();
   }
 
   getTodos(){
     this.todoService.getTodos().subscribe((todo) => {
-
+      this.todos = todo;
+      console.log(this.todos);
     });
   }
 

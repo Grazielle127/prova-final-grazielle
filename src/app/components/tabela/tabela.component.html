@@ -1,1 +1,19 @@
-<p>tabela works!</p>
+<div class="box-todos">
+    <div class="box-tabela">
+
+        <table class="tabela">
+            <tr class="tabela-head">
+                <td class="col-userId">UserId</td>
+                <td class="col-id">Id</td>
+                <td class="col-title">Title</td>
+                <td class="col-completed">Completed</td>
+            </tr>
+            <tr *ngFor="let todo of todos">
+                <td class="col-userId">{{todo.userId}}</td>
+                <td class="col-id">{{todo.id}}</td>
+                <td class="col-title">{{todo.title}}</td>
+                <td class="col-completed">{{todo.completed}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
